@@ -1,0 +1,37 @@
+.about
+	background-repeat: no-repeat
+	background-position: center center
+	margin: 0 -16px
+	padding: 16px
+	font-size: 15px
+	font-weight: light
+	text-transform: uppercase
+	color: #fff
+
+	&__container
+		width: viewport
+		max-width: 100%
+		margin: 0 auto
+
+	&__content
+		max-width: 455px
+
+	&__title
+		font-size: 24px
+		font-weight: regular
+		margin-bottom: 30px
+
+	&__author
+		font-weight: bold
+		margin-top: 30px
+
+@media desktop
+	.about
+		&__container
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			min-height: 535px
+
+		&__content
+			padding-left: 110px

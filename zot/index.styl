@@ -1,0 +1,47 @@
+// Components
+@import 'components/header'
+@import 'components/logo'
+@import 'components/search'
+@import 'components/categories'
+@import 'components/myaccount'
+@import 'components/mycart'
+@import 'components/banner'
+@import 'components/products'
+@import 'components/prices'
+@import 'components/instagram'
+@import 'components/about'
+@import 'components/footer'
+@import 'components/filters'
+@import 'components/breadcrumb'
+// Pages
+@import 'pages/catalog'
+@import 'pages/product'
+
+.categories, .mycart, .categories__show, .cms-home .products
+	display: none
+
+.search
+	visibility: hidden
+
+.user-logged
+	.search
+		visibility: visible
+
+	.categories, .mycart, .categories__show, &.cms-home .products
+		display: block
+
+	.myaccount, .about
+		display: none
+
+body:not(.user-logged)
+	.wrapper-container
+		padding-top: 80px
+
+.catalog-category-view
+	.categories
+		border-bottom: solid 1px #000
+
+@media desktop
+	.user-logged
+		.categories__show
+			display: none

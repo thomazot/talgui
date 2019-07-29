@@ -1,0 +1,114 @@
+.categories
+	&__show
+		order: -1
+		width: 48px
+		height: 48px
+		flex: 0 0 48px
+		background: #fff
+		color: unquote($color1_bg)
+
+		&:before
+			font-size: 24px
+
+		&:hover
+			background: #fff
+			color: unquote($color1_bg)
+
+// Mobile config Default
+@media mobile
+	.categories
+		.parent
+			> ul
+				display: none
+
+	.all-li--0
+		padding-bottom: 0
+
+		&.parent
+			position: relative
+
+			&:after
+				icon('\f054')
+				position: absolute
+				right: 0
+				top: 0
+				z-index: 10
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 45px
+				height: 45px
+				color: #fff
+				background: rgba(255, 255, 255, 0.2)
+				transition: all 0.2s ease
+				font-size: 24px
+
+		&.on:after
+			transform: rotate(90deg)
+
+@media desktop
+	.categories
+		background: #fff
+		position: relative
+		z-index: 99
+		transition: all 0.2s ease-in-out
+
+		.ul--0
+			width: viewport
+			margin: 0 auto
+
+		&--justify
+			.ul--1
+				width: 160px
+
+			.drop--top .box--1
+				top: 40px
+
+			.box--1
+				border-radius: 3px
+
+		&__all
+			display: none
+
+		.a--0
+			font-size: 14px
+			font-weight: light
+			text-transform: uppercase
+			color: unquote($color1_bg)
+
+		.a--1
+			font-size: 14px
+			font-weight: light
+			line-height: 14px
+			color: unquote($color1_bg)
+
+		.li--0
+			&:hover
+				.a--0
+					font-weight: bold
+					background: #fff
+					color: unquote($color1_bg)
+
+		&__products, &__block
+			border-left: 0
+
+			.title, .price-box-avista, .price-box-parcelado, .product-rate, .regular-price .label
+				display: none
+
+			.product__name
+				display: block
+				font-size: 14px
+				font-weight: regular
+				text-transform: uppercase
+				color: #2c2829
+				text-align: center
+
+			.regular-price .price
+				display: block
+				font-size: 16px
+				font-weight: light
+				text-align: center
+
+		.scrolling:not(.scrolling--up) &
+			transform: translateY(-44px)
+			border-bottom: solid 1px #3c3733

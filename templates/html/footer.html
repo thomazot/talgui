@@ -1,0 +1,50 @@
+<div class="footer__row footer__row--one">
+	<div class="footer__col footer__col--logo">
+		<div class="footer__logo">
+			<a href="/"><img src="@img(logo-footer)" /></a>
+		</div>
+		{{block type="menubuilder/output" identifier="sobre-a-loja"}}
+
+		<div class="footer__whatsapp">
+			<div class="footer__whatsapp-title">
+				Whatsapp:
+			</div>
+			<div class="footer__whatsapp-phone">
+				{{config path="general/store_information/phone"}}
+			</div>
+		</div>
+		<div class="footer__timer">
+			{{widget type="cms/widget_block" template="cms/widget/static_block/default.phtml" block_id="horario-atendimento"}}
+		</div>
+		<div class="footer__email">
+			<div class="footer__email-title">EMail:</div>
+			<div class="footer__email-email">
+				{{config path="trans_email/ident_general/email"}}
+			</div>
+		</div>
+	</div>
+	<div class="footer__col footer__col--inst">
+		<h3 class="footer__title">Institucional</h3>
+		{{block type="menubuilder/output" identifier="institucional"}}
+		<div class="footer__buy">
+			<h3 class="footer__title">Políticas de compra</h3>
+		</div>
+	</div>
+	<div class="footer__col footer__col--news">
+		<div>
+			{{widget type="interface/widget_newsletter" template="interface/widgets/newsletter.phtml" identificador="newsfooter" texto="<h3>NEWSLETTER</h3>
+			<p>Cadastre-se e receba novidades e promoções exclusivas</p>" label_email="E-mail:" placeholder_email="Seu E-mail" texto_botao="Cadastrar" exibir_nome="1" label_nome="Nome:" placeholder_nome="Seu Nome"}}
+		</div>
+		<div class="footer__social">
+			{{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="social" redes="all"}}
+		</div>
+	</div>
+</div>
+
+<div class="footer__row footer__row--payment">
+	{{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="pagtos_footer" titulo="Pague com" pagtos="all"}}
+</div>
+
+<div class="footer__copyright">
+	Cartão de Crédito: 2x sem juros acima de R$500 | 3x sem juros acima de R$1500 Á vista: 5% de desconto
+</div>

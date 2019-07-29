@@ -1,0 +1,151 @@
+.mycart
+	height: 48px
+	min-width: 48px
+
+	&__header
+		.ico
+			width: 24px
+			height: 24px
+
+	&__content
+		.title
+			font-size: 16px
+			font-weight: medium
+
+		.std
+			font-size: 12px
+
+	&__remove
+		display: none
+		justify-content: center
+		align-items: center
+		width: 48px
+		height: 48px
+
+	&__details
+		text-align: right
+
+		.price
+			font-size: 16px
+			font-weight: light
+			color: #3c3733
+
+	&__name
+		a
+			font-size: 14px
+			font-weight: medium
+			line-height: 1.2
+
+	&__qtd
+		font-size: 14px
+		font-weight: light
+		color: #3c3733
+		opacity: 1
+
+		.label
+			display: none
+
+		&:before
+			content: 'Qtd.'
+			text-transform: uppercase
+
+	.truncated
+		display: none
+
+	&__item
+		border-bottom: 0
+
+	&__totals
+		.title
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 15px
+			font-size: 16px
+			font-weight: light
+			text-transform: uppercase
+
+			&:before
+				content: ''
+				flex: 1
+				height: 1px
+				margin-right: 5px
+				border-top: solid 1px #e5e5e5
+
+		.regular-price
+			text-align: right
+			padding-bottom: 10px
+			border-bottom: solid 1px #e5e5e5
+
+			.label
+				display: none
+
+			.price
+				font-size: 16px
+				font-weight: light
+				color: #3c3733
+
+		.price-box-avista
+			margin: 0
+			padding: 15px 0
+
+			.discount
+				order: -1
+				margin-right: 3px
+
+			.discount, .label
+				font-size: 14px
+				font-weight: light
+				text-transform: uppercase
+				color: #3c3733
+
+			.price
+				display: flex
+				justify-content: flex-end
+				align-items: center
+				font-size: 16px
+				font-weight: light
+				color: #3c3733
+
+	&__actions
+		margin: 0
+		padding-top: 20px
+
+		.editar
+			font-size: 0
+			font-weight: light
+			color: #000
+
+			&:before
+				content: 'Editar Sacola'
+				font-size: 14px
+
+		.finalizar
+			font-size: 16px
+			font-weight: medium
+			text-align: center
+			background: unquote($color1_bg)
+			color: #fff
+
+@media desktop
+	.mycart
+		&__header
+			a
+				box-shadow: none
+
+		.imgcase img
+			max-width: 46px
+
+		&__item
+			align-items: flex-start
+
+		&:hover
+			.mycart__header a
+				background: #fff
+
+				.ico
+					fill: unquote($color1_bg)
+
+		&__content
+			box-shadow: 0 0 0 1px #e5e5e5
+			border-radius: 3px

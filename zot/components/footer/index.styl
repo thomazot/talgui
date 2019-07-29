@@ -1,0 +1,140 @@
+.footer
+	.mymenu
+		margin-bottom: 25px
+
+		.a--0
+			font-size: 14px
+			font-weight: light
+			text-transform: uppercase
+
+	&__logo
+		margin-bottom: 25px
+
+	&__whatsapp
+		&-title
+			font-size: 14px
+			font-weight: light
+			text-transform: uppercase
+
+		&-phone
+			font-size: 18px
+			font-weight: bold
+
+	&__timer
+		margin-bottom: 25px
+
+		.textblock
+			font-size: 14px
+			font-weight: light
+			text-transform: uppercase
+
+	&__email
+		margin-bottom: 25px
+
+		&-title
+			font-size: 14px
+			font-weight: light
+			text-transform: uppercase
+
+		&-email
+			font-size: 14px
+			font-weight: medium
+			text-transform: uppercase
+
+	&__title
+		display: block
+		margin-bottom: 35px
+		font-size: 16px
+		font-weight: regular
+		text-transform: uppercase
+
+	.newsletter
+		&__form
+			max-width: 270px
+			margin: 0 auto
+
+		&__text
+			h3
+				font-size: 26px
+				font-weight: regular
+				text-transform: uppercase
+				text-align: center
+
+			&.std
+				font-size: 14px
+				font-weight: light
+				text-align: center
+
+		.input-text
+			height: 48px
+			border: solid 1px #fff
+			border-radius: 0
+			background: #000
+			color: #fff
+
+			&::placeholder
+				color: #fff
+				font-size: 12px
+				font-weight: regular
+
+		&__btn
+			background: #fff
+			color: #000
+			border-radius: 0
+			font-size: 14px
+			font-weight: bold
+
+	.socials__list
+		justify-content: center
+
+	&__row
+		text-align: center
+
+		&--payment
+			padding: 16px
+			margin: -16px
+			background: #fff
+
+	.pays__title
+		display: block
+		font-size: 16px
+		font-weight: medium
+		text-transform: uppercase
+		color: unquote($color1_bg)
+
+	&__copyright
+		box-shadow: 0 0 0 2px #fff
+		padding: 16px
+		margin: -16px
+		background: #fff
+		font-size: 12px
+		font-weight: light
+		color: #2c2829
+		text-align: center
+
+@media desktop
+	.footer__row
+		text-align: left
+
+	.footer__row--one
+		display: flex
+		justify-content: space-between
+		padding: 60px 0
+
+	.footer__col--news
+		border-left: solid 1px #fff
+		padding-left: 10%
+
+	#pagtos_footer
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		padding: 20px 0
+
+	.pays__title
+		margin-bottom: 0
+		padding-right: 25px
+
+@media (min-width: viewport)
+	.footer__row--payment, .footer__copyright
+		box-shadow: 800px 0 0 #fff, -800px 0 0 #fff

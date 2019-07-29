@@ -1,0 +1,55 @@
+.search
+	.header &.on
+		.search__input
+			height: 52px
+
+	input[type=search]&__input
+		box-shadow: none
+		border: 0
+		border-radius: 0
+		border-bottom: solid 1px #e5e5e5
+		text-align: center
+
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 48px
+		height: 48px
+		border-radius: 0
+		padding: 0
+		background: none
+
+		.ico
+			height: 24px
+			width: 24px
+			fill: unquote($color1_bg)
+
+@media (min-width: 569px)
+	.search
+		&__button
+			order: -1
+			box-shadow: none
+			justify-content: flex-start
+
+			.ico
+				width: 16px
+				height: 16px
+
+		&__input
+			&::placeholder
+				font-size: 12px
+				font-weight: medium
+				color: #000000
+
+		&__button
+			height: 47px
+
+		&__form
+			display: flex
+			max-width: 445px
+			margin: 0 auto
+			border-bottom: solid 1px #e5e5e5
+
+	input[type=search].search__input
+		border-bottom: 0

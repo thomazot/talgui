@@ -1,0 +1,237 @@
+.product-image-gallery
+	box-shadow: none
+
+.attribute-options-images-wholesale select
+	width: 70px
+	min-width: 0
+
+.prod__shop
+	table tbody th:last-child, table tbody td:last-child
+		border-right: 0
+
+.product-image-thumbs
+	.thumb-link
+		border-radius: 0
+		box-shadow: none
+		opacity: 0.5
+
+		&.on
+			box-shadow: none
+			opacity: 1
+
+	li
+		min-width: 0
+		min-height: 0
+
+.prod
+	&__name
+		h1
+			font-size: 26px
+			font-weight: regular
+			text-transform: uppercase
+
+		.sku
+			font-size: 12px
+			font-weight: regular
+			text-transform: uppercase
+			color: #8d8d8d
+
+	&__shop
+		.regular-price, .special-price
+			.price span
+				font-size: 23px
+				font-weight: medium
+
+		.add-to-cart
+			.qty-wrapper
+				display: none
+
+		.add-to-cart-btn
+			padding: 0
+			font-size: 16px
+			font-weight: medium
+			text-transform: uppercase
+			background: #000
+			border-radius: 0
+
+	&__desc-item
+		a
+			font-size: 14px
+			text-transform: uppercase
+
+		&--short-desc
+			a
+				font-weight: semibold
+
+	&__short-desc .std
+		font-size: 12px
+		font-weight: light
+		text-transform: uppercase
+
+.configurable:before
+	display: none
+
+.configurable__caption
+	font-size: 16px
+	font-weight: medium
+	text-transform: uppercase
+
+.product-options
+	padding: 20px 0
+	margin: 30px 0
+	border-top: solid 1px #e5e5e5
+	border-bottom: solid 1px #e5e5e5
+
+.related__subtitle, .related__add-checkbox
+	display: none
+
+.attribute-options-images-wholesale
+	max-width: 100%
+	overflow-x: auto
+
+.venda-atacado
+	thead th
+		background: none
+		color: #000
+		font-size: 16px
+		font-weight: bold
+
+	td, th
+		border: 0
+
+	tbody th:first-child, tbody td:first-child
+		border: 0
+
+.jointsales
+	.more
+		display: none
+
+	.names
+		display: block
+		font-size: 14px
+		font-weight: light
+		color: #2c2829
+		margin: 30px 0
+
+	.regular-price .price span
+		font-size: 16px
+		font-weight: light
+
+	.owl-wrapper-outer
+		border: 0
+
+	&__currentin
+		box-shadow: none
+
+	&__list
+		margin-top: 50px
+
+	&__currentin
+		display: block
+		padding: 0 0 40px
+
+		.thumb
+			padding-bottom: 30px
+
+	&__row
+		padding: 0
+
+	.todos-juntos, .economize, .jointsales__payments
+		display: none
+
+	&__totals
+		&:before
+			content: 'Compre o look'
+			font-size: 20px
+			font-weight: light
+			text-transform: uppercase
+			color: #000
+			letter-spacing: 5px
+
+	.comprando-junto
+		font-size: 0
+
+		.price
+			font-size: 18px
+			font-weight: medium
+			color: #000
+
+	.btn-jointsales
+		font-size: 16px
+		font-weight: medium
+		text-transform: uppercase
+		border-radius: 0
+		height: 60px
+		margin-top: 30px
+
+@media desktop
+	.prod
+		&__img
+			flex: 0 0 50%
+
+		&__desc
+			display: flex
+
+			&-item
+				margin-right: 15px
+
+	.product-image-container
+		display: flex
+
+	.more-views
+		order: -1
+		width: 60px
+		margin-right: 20px
+
+	.product-image-thumbs
+		display: block
+
+	.related__title, .jointsales__title
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		font-size: 20px
+		letter-spacing: 8px
+		text-transform: uppercase
+		color: unquote($color1_bg)
+		margin-bottom: 50px
+
+		&:after
+			content: ''
+			flex: 1
+			height: 2px
+			background: unquote($color1_bg)
+			margin-left: 10px
+
+	.jointsales
+		& .jointsales__row
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			flex-wrap: nowrap
+
+		&__current
+			flex: 0 1 315px
+
+			+ .jointsales__list
+				flex: 0 1 315px
+
+		&__currentin, &__item
+			text-align: center
+			margin-right: 50px
+
+			.title
+				font-size: 14px
+				font-weight: regular
+				color: #2c2829
+				text-transform: uppercase
+
+		&__action
+			flex: 0 1 280px
+			align-self: center
+
+		&__list
+			margin-top: 0
+
+		&__item
+			max-width: 100%
